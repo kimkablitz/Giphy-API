@@ -8,11 +8,28 @@ html, body {
 	background-color: #fff;
 	opacity: 0.8;
     padding: 20px;
-    text-align: center;
+    height: 60%;
 }
 .jumbotron {
     background-color: inherit;
 }
 .jumbotron .h1, .jumbotron h1 {
     text-align: center;
+}
+#gifBtn{
+    background-color:purple;
+}
+#gifsHere{
+    background-color: blue;
+   
+}
+#input-box{
+    background-color: aqua;
+}
+#action-input{
+    width:100%;
+}
+input{
+    margin:5%;
+    width:90%;
 }
