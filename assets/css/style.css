@@ -17,10 +17,10 @@ html, body {
     text-align: center;
 }
 #gifBtn{
-    background-color:purple;
+    height:20%;
 }
 #gifsHere{
-    background-color: blue;
+    background-color: #fff;;
    
 }
 #input-box{

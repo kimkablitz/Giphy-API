@@ -7,7 +7,7 @@ $(document).ready(function () {
         for (var i = 0; i < animals.length; i++) {
             var animalGifBtn = $('<button>')
             animalGifBtn.addClass("animal");
-            animalGifBtn.addClass("btn btn-success mx-1")
+            animalGifBtn.addClass("btn btn-success m-1")
             animalGifBtn.attr("data-name", animals[i]);
             animalGifBtn.text(animals[i]);
             $("#gifBtn").append(animalGifBtn)
