@@ -1,6 +1,6 @@
-# Giphy-API
-# Description of a gateway to the Amazon Forest
-# Pick a name of an animal you would like to see in this forest and type it in the box, GIFs for this search will be populated when you click on its button.
+## Giphy-API
+## Description of a gateway to the Amazon Forest
+* Pick a name of an animal you would like to see in this forest and type it in the box, GIFs for this search will be populated when you click on its button.
 ## Screen shots
 ![Front Page](assets/images/screenshot.png)
 
