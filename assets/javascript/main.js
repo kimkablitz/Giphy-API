@@ -7,7 +7,7 @@ $(document).ready(function () {
         for (var i = 0; i < animals.length; i++) {
             var animalGifBtn = $('<button>')
             animalGifBtn.addClass("animal");
-            animalGifBtn.addClass("btn btn-success")
+            animalGifBtn.addClass("btn btn-success mx-1")
             animalGifBtn.attr("data-name", animals[i]);
             animalGifBtn.text(animals[i]);
             $("#gifBtn").append(animalGifBtn)
@@ -28,7 +28,7 @@ $(document).ready(function () {
     function displayAnimalGif() {
         var APIKey = "07TTzNbZeSEcKvkECYViKhzrheC3lT3P";
         var animal = $(this).attr("data-name");//what does this line do?
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=" + APIKey;
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=" + APIKey;
 
         $.ajax({
             url: queryURL,
