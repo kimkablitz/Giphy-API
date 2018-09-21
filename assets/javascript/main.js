@@ -45,7 +45,7 @@ $(document).ready(function () {
     function displayAnimalGif() {
         var APIKey = "07TTzNbZeSEcKvkECYViKhzrheC3lT3P";
         var animal = $(this).attr("data-name");//what does this line do?
-        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=" + APIKey;
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=" + APIKey + "&limit10";
 
         $.ajax({
             url: queryURL,
@@ -53,24 +53,25 @@ $(document).ready(function () {
         }).done(function (response) {
             console.log(response)
             $("#gifsHere").empty()
-            var animalGifDiv = $('<div class="animalGifDiv">')
+            var animalGifDiv = $('<div class="animalGifDiv card">')
             var r = response.data
 
             //loopthrough the data object
             for (var i = 0; i < r.length; i++) {
 
                 var rating = r[i].rating
-                var rate = $("<p>").text("Rating: " + rating)
-                animalGifDiv.append(rate)
+                var rate = $('<p class="card-tittle">').text("Rating: " + rating)
+                
                 //append the gif urls
-                var gifImage = $("<img>")
+                var gifImage = $('<img class= "card-img-top">')
                 gifImage.attr("src", r[i].images.fixed_height_still.url);
                 gifImage.attr("data-still", r[i].images.fixed_height_still.url);
                 gifImage.attr("data-animate", r[i].images.fixed_height.url);
                 gifImage.attr("data-state", "still");
                 gifImage.addClass("image");
-                
+                animalGifDiv.append(rate)
                 animalGifDiv.append(gifImage)
+                
                 $("#gifsHere").prepend(animalGifDiv)
             }
         })
