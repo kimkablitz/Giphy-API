@@ -6,7 +6,7 @@
 
 
 
-# Technology Uses
+# Technology Used
 - Bootstrap
 - JQuey
 - API from GIPHY
