@@ -60,7 +60,7 @@ $(document).ready(function () {
             for (var i = 0; i < r.length; i++) {
 
                 var rating = r[i].rating
-                var rate = $('<p class="card-tittle">').text("Rating: " + rating)
+                var rate = $('<p class="card-tittle text-center">').text("Rating: " + rating)
                 
                 //append the gif urls
                 var gifImage = $('<img class= "card-img-top">')
